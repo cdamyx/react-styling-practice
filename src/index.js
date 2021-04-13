@@ -16,7 +16,7 @@ let color = "";
 if (hours < 12) {
   timeOfDay = "Morning";
   color = "red";
-} else if (hours > 12 && hours < 18) {
+} else if (hours < 18) {
   timeOfDay = "Afternoon";
   color = "green";
 } else {
