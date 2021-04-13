@@ -11,7 +11,7 @@ import ReactDOM from "react-dom";
 const date = new Date();
 const hours = date.getHours();
 let timeOfDay = "";
-let color = "";
+//let color = "";
 let customColor = {
   color: ""
 };
