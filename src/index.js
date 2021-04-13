@@ -12,20 +12,23 @@ const date = new Date();
 const hours = date.getHours();
 let timeOfDay = "";
 let color = "";
+let customColor = {
+  color: ""
+};
 
 if (hours < 12) {
   timeOfDay = "Morning";
-  color = "red";
+  customColor.color = "red";
 } else if (hours < 18) {
   timeOfDay = "Afternoon";
-  color = "green";
+  customColor.color = "green";
 } else {
   timeOfDay = "Evening";
-  color = "blue";
+  customColor.color = "blue";
 }
 
 ReactDOM.render(
-  <h1 className="heading" style={{ color }}>
+  <h1 className="heading" style={customColor}>
     Good {timeOfDay}
   </h1>,
   document.getElementById("root")
